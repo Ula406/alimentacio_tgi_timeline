@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>l'Alimentació | TGI TIMELINE</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body { 
+            overflow-y: scroll; /* Manté el desplaçament */
+            scrollbar-width: none; /* Per a Firefox */
+            font-family: 'Poppins', sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            font-family: 'Fascinate Inline', sans-serif;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #2c3e50;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .container, .container-top {
+            max-width: 80%;
+            margin: 10px auto 20px auto;
+            padding: 40px;
+            background: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 40px;
+        }
+        .container-top {
+            margin-top: 110px;
+        }
+        h1, h2 { color: #2c3e50; }
+        ul { list-style-type: square; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .hidden {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        span {
+            font-size: larger;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .grid-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .grid-container img:hover {
+            transform: scale(1.25);
+        }
+        body::-webkit-scrollbar {
+            display: none; /* Per a Chrome, Safari i Edge */
+        }
+        .grid-container-webgrafia {
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .grid-container-webgrafia img {
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.25s ease-in-out;
+        }
+        .grid-container-webgrafia img:hover {
+            transform: scale(1.25);
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .footer-container div {
+            flex: 1;
+            margin: 10px;
+            min-width: 250px;
+        }
+
+        .footer-container h3 {
+            font-family: 'Fascinate Inline';
+            border-bottom: 2px solid #3498db;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .footer-container ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-container ul li {
+            margin: 8px 0;
+        }
+
+        .footer-container ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-container ul li a:hover {
+            color: #3498db;
+        }
+
+        .social-icons img {
+            width: 32px;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        .footer-bottom {
+            background: #1a252f;
+            padding: 10px 0;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <span>l'alimentació</span>
+    </div>
+    <div class="container-top">
+        <h2 class="hidden">TGI TIMELINE - alimentació humana</h2>
+    </div>
+    
+    <div class="container">
+        <h3 class="hidden">Alimentació abans de la descoberta del foc (Paleolític - 7000 aC)</h3>
+        <p class="hidden">Els primers homínids no podien confiar només en fruites i verdures, per això consumien també tubercles, arrels, corms i bulbs, fruits secs, i brots tendres.</p>
+    </div>    
+
+    <div class="container">
+        <h3 class="hidden">Alimentació després de la descoberta del foc (Neolític)</h3>
+        <ul class="hidden">
+            <li><strong>Carns:</strong> Mamuts, cérvols, cavalls, bisons, porcs senglars.</li>
+            <li><strong>Peix i marisc:</strong> Peixos, crancs, musclos.</li>
+            <li><strong>Verdures i fruites:</strong> Mores, nabius, figues, arrels, bolets.</li>
+            <li><strong>Cereals i llegums:</strong> Blat, ordi, pèsols, llenties.</li>
+            <li><strong>Fruits secs i llavors:</strong> Ametlles, nous, avellanes.</li>
+            <li><strong>Mel i ous:</strong> Recollien mel i trobaven ous de diversos ocells.</li>
+            <li><strong>Insectes:</strong> Llagostes i formigues.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3>Imatges:</h3>
+        <div class="grid-container">
+            <img src="images/_125324384_untitled.png" alt="Canibalisme gastronòmic">
+            <img src="images/6caa38d83701af6ab25bb48874ab21c3.jpg" alt="Alimentació prehistòrica">
+            <img src="images/49aacb7ca6294e913caec781877fac25.jpg" alt="Com es menjava a la prehistòria">
+            <img src="images/681641_1412244913_m.gif" alt="Foto del Neolític">
+            <img src="images/1574441724406.webp" alt="Foc primitiu">
+            <img src="images/bc1e0eea5a54a32f02bbed84cf644fd1.jpg" alt="Moviment de mamut lanut">
+            <img src="images/canibalismo20gastronómico.jpg" alt="Portada emocions">
+            <img src="images/como-era-la-alimentacic3b3n-en-la-prehistoria.jpg" alt="Imatge prehistòrica">
+            <img src="images/Como-se-comia-en-la-prehistoria-1024x650.webp" alt="Canibalisme gastronòmic">
+            <img src="images/cropped-qsfdbn-uszosg2ehb5eodf73zfa-cocc80pia.webp" alt="Alimentació prehistòrica">
+            <img src="images/foto-neolitico-35663489.jpg" alt="Com es menjava a la prehistòria">
+            <img src="images/image.png" alt="Foto del Neolític">
+            <img src="images/fuego_primitivo.jpg" alt="Foc primitiu">
+            <img src="images/image.webp" alt="Moviment de mamut lanut">
+            <img src="images/images (1).jpg" alt="Portada emocions">
+            <img src="images/images (2).jpg" alt="Imatge prehistòrica">
+            <img src="images/images.jpg" alt="Imatge prehistòrica">
+            <img src="images/portada-emociones.webp" alt="Imatge prehistòrica">
+            <img src="images/Revelan-los-patrones-de-movimiento-de-un-mamut-lanudo-del-Artico.jpg" alt="Imatge prehistòrica">
+        </div>
+    </div>
+
+    <div class="container">
+        <h3>Webgrafia:</h3>
+        <div class="grid-container-webgrafia">
+            <a href="https://menjaactuaimpacta.org/blog/sostenibilitat-i-dieta-planetaria/eat-life-que-menjaven-els-primers-humans/" target="_blank">
+                <img src="assets/favicons_webgrafia/favicon1.png" alt="MenjaActuaImpacta">
+            </a>            
+            <a href="https://ca.wikipedia.org/wiki/Hist%C3%B2ria_de_la_gastronomia_als_Pa%C3%AFsos_Catalans" target="_blank">
+                <img src="assets/favicons_webgrafia/favicon2.png" alt="Viquipèdia">
+            </a>
+            <a href="https://www.servimedia.es/noticias/731735" target="_blank">
+                <img src="assets/favicons_webgrafia/favicon3.jpg" alt="Servimedia">
+            </a>
+            <a href="https://www.smithsonianmag.com/smart-news/an-ice-age-infants-bones-reveal-early-americans-ate-woolly-mammoths-as-a-protein-staple-180985618/" target="_blank">
+                <img src="assets/favicons_webgrafia/favicon4.jpg" alt="SmithSonianMag">
+            </a>
+                                    
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Sobre Nosaltres</h3>
+                <p>Aquest és el nostre producte final del TGI de Timeline.</p>
+            </div>
+            <div class="footer-center">
+                <h3>Enllaços útils</h3>
+                <ul>
+                    <li><a href="#">Com menjaven?</a></li>
+                    <li><a href="#">Com cuinaven?</a></li>         
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Formulari</h3>
+                <div style="border: 2px;">
+                    <ul>
+                        <li><a href="https://forms.office.com/r/bXVfTaELZm">Formulari</a></li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p style="font-size: 1.5em;">&copy; 2025 TGI TIMELINE - Alimentació Humana | Tots els drets reservats</p>
+            <p>Fet per: <strong>Joan Barrera</strong>, <strong>Carolina Gimeno</strong>, <strong>Eloi Sadurní</strong> i <strong>Oleguer Riera</strong></p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll('.hidden');
+            
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
